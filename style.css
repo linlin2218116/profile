@@ -88,7 +88,7 @@ bea:hover:after {
   float: right; /* Float the image container to the right */
   margin-left: 20px; /* Add some space between the text and the image */
   margin-bottom: 20px; /* Add some space below the image */
-  max-width: 50%; /* Limit the width of the image container */
+  max-width: 40%; /* Limit the width of the image container */
 }
 
 .image-container img {
