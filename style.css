@@ -1,0 +1,98 @@
+@font-face {
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 300;
+  src: url(https://fonts.gstatic.com/s/rubik/v28/iJWKBXyIfDnIV7nBrXw.woff2) format('woff2');
+  unicode-range: U+0000-00FF;
+}
+
+@font-face {
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 500;
+  src: url(https://fonts.gstatic.com/s/rubik/v28/iJWKBXyIfDnIV7nBrXw.woff2) format('woff2');
+  unicode-range: U+0000-00FF;
+}
+
+@font-face {
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 700;
+  src: url(https://fonts.gstatic.com/s/rubik/v28/iJWKBXyIfDnIV7nBrXw.woff2) format('woff2');
+  unicode-range: U+0000-00FF;
+}
+
+body {
+  font-family: 'Rubik', -apple-system, BlinkMacSystemFont, 'Segoe UI',
+    Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue',
+    sans-serif;
+  font-size: calc(10px + 0.33vw);
+  -webkit-font-smoothing: antialiased;
+  padding: 5vh 10vw;
+  color: #121314;
+}
+h1 {
+  font-size: 4.5em;
+  font-weight: 500;
+  margin-bottom: 0;
+}
+p {
+  font-size: 1.6em;
+  font-weight: 300;
+  line-height: 1.4;
+  max-width: 28em;
+}
+a {
+  text-decoration: none;
+  white-space: nowrap;
+  color: #121314;
+  position: relative;
+}
+a:after {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  top: 66%;
+  left: -0.1em;
+  right: -0.1em;
+  bottom: 0;
+  transition: top 200ms cubic-bezier(0, 0.8, 0.13, 1);
+  background-color: rgba(79, 192, 141, 0.5);
+}
+a:hover:after {
+  top: 0%;
+}
+bea {
+  text-decoration: none;
+  white-space: nowrap;
+  color: #121314;
+  position: relative;
+}
+bea:after {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  top: 66%;
+  left: -0.1em;
+  right: -0.1em;
+  bottom: 0;
+  transition: top 200ms cubic-bezier(0, 0.8, 0.13, 1);
+  background-color: rgba(219, 30, 36, 0.5);
+}
+bea:hover:after {
+  top: 0%;
+}
+
+
+.image-container {
+  float: right; /* Float the image container to the right */
+  margin-left: 20px; /* Add some space between the text and the image */
+  margin-bottom: 20px; /* Add some space below the image */
+  max-width: 50%; /* Limit the width of the image container */
+}
+
+.image-container img {
+  max-width: 100%; /* Ensure the image doesn't exceed the width of its container */
+  height: auto; /* Maintain the aspect ratio */
+  max-height: 80vh; /* Adjust as needed */
+}
